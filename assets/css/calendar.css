@@ -1,0 +1,171 @@
+.vrc.vrc-calendar .day-number {
+    /*    width: 22px;
+        height: 22px;
+        */
+    margin: 1px;
+    line-height: 22px;
+    text-align: center;
+    background-color: #DDFFCC;
+    color:#000 !important; /*New*/
+}
+.vrc.vrc-calendar .day-number.no-event-day {
+    cursor: pointer;
+}
+.vrc.vrc-calendar .calendar-day-head {
+    /*
+    width: 22px;
+    height: 22px;
+    */
+    margin: 1px;
+    line-height: 22px;
+    text-align: center;
+    background-color: #F1F0F0;
+    color:#000 !important; /*New*/
+}
+
+.vrc.vrc-calendar .event-start {
+    background: #ddffcc; /* Old browsers */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZGRmZmNjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZGRmZmNjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZmZjMGJkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+    background: -moz-linear-gradient(-45deg,  #ddffcc 0%, #ddffcc 50%, #ffc0bd 50%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ddffcc), color-stop(50%,#ddffcc), color-stop(50%,#ffc0bd)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #ddffcc 0%,#ddffcc 50%,#ffc0bd 50%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #ddffcc 0%,#ddffcc 50%,#ffc0bd 50%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #ddffcc 0%,#ddffcc 50%,#ffc0bd 50%); /* IE10+ */
+    background: linear-gradient(135deg,  #ddffcc 0%,#ddffcc 50%,#ffc0bd 50%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ddffcc', endColorstr='#ffc0bd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.vrc.vrc-calendar .event-day {
+    background-color: #FFC0BD;
+    color:#000; /*New*/
+
+}
+
+.vrc.vrc-calendar .event-end {
+    background: #ffc0bd; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmYzBiZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2RkZmZjYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZGZmY2MiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(-45deg,  #ffc0bd 50%, #ddffcc 50%, #ddffcc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%,#ffc0bd), color-stop(50%,#ddffcc), color-stop(100%,#ddffcc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #ffc0bd 50%,#ddffcc 50%,#ddffcc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #ffc0bd 50%,#ddffcc 50%,#ddffcc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #ffc0bd 50%,#ddffcc 50%,#ddffcc 100%); /* IE10+ */
+    background: linear-gradient(135deg,  #ffc0bd 50%,#ddffcc 50%,#ddffcc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc0bd', endColorstr='#ddffcc',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+
+}
+
+.vrc.vrc-calendar .start-end-day {
+    background: #FFC0BD;
+    background: -moz-linear-gradient(-45deg, #FFC0BD 0%, #FFC0BD 46%, #DDFFCC 47%, #DDFFCC 50%, #DDFFCC 54%, #FFC0BD 55%, #FFC0BD 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, #FFC0BD), color-stop(46%, #FFC0BD), color-stop(47%, #DDFFCC), color-stop(50%, #DDFFCC), color-stop(54%, #DDFFCC), color-stop(55%, #FFC0BD), color-stop(100%, #FFC0BD));
+    background: -webkit-linear-gradient(-45deg, #FFC0BD 0%, #FFC0BD 46%, #DDFFCC 47%, #DDFFCC 50%, #DDFFCC 54%, #FFC0BD 55%, #FFC0BD 100%);
+    background: -o-linear-gradient(-45deg, #FFC0BD 0%, #FFC0BD 46%, #DDFFCC 47%, #DDFFCC 50%, #DDFFCC 54%, #FFC0BD 55%, #FFC0BD 100%);
+    background: -ms-linear-gradient(-45deg, #FFC0BD 0%, #FFC0BD 46%, #DDFFCC 47%, #DDFFCC 50%, #DDFFCC 54%, #FFC0BD 55%, #FFC0BD 100%);
+    background: linear-gradient(135deg, #FFC0BD 0%, #FFC0BD 46%, #DDFFCC 47%, #DDFFCC 50%, #DDFFCC 54%, #FFC0BD 55%, #FFC0BD 100%);
+    color: #000000 !important;
+    /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DDFFCC', endColorstr='#FFC0BD',GradientType=1 ); */
+}
+
+.vrc.vrc-calendar .calendars-container {
+    max-width: 606px;
+    margin: 0 auto;
+}
+
+.vrc.vrc-calendar .calendar-month-container {
+    text-align:center;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    min-height: 200px;
+    margin-bottom: 10px;
+}
+
+.vrc.vrc-calendar .calendar-month-name {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    color:#000;
+}
+
+.vrc.vrc-calendar .calendar-header {
+    margin-bottom: 11px;
+    /*float: left;*/
+}
+
+.vrc.vrc-calendar .calendar-legend{
+    margin-right: 8px;
+    height: 34px;
+    /* width: 194px;*/
+    float: left;
+    line-height: 34px;
+}
+
+.vrc.vrc-calendar .calendar-legend .day-number {
+    border: 1px solid #CCCCCC;
+    float: left;
+    margin-top: 6px;
+    margin-right: 5px;
+}
+
+.vrc.vrc-calendar .calendar-legend-text {
+    float: left;
+    line-height: inherit;
+    /* margin-right: 12px;*/
+}
+.vrc.vrc-calendar .calendar-header .btn-prev,
+.vrc.vrc-calendar .calendar-header .btn-next {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-indent: -99999px;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+}
+.vrc.vrc-calendar .calendar-header .btn-prev {
+    background: url(../images/arrow_left.png) center center no-repeat;
+}
+.vrc.vrc-calendar .calendar-header .btn-next {
+    background: url(../images/arrow_right.png) center center no-repeat;
+}
+
+/* Add Custom CSS Here*/
+.vrc.vrc-calendar .calendar{ width:100%;}
+.vrc.vrc-calendar .customNavigation{ color:#000}
+.vrc.vrc-calendar .customNavigation a{ color:#000; text-decoration:none}
+.vrc.vrc-calendar .calendar-header{ margin:20px 0 0px 0; padding: 0 5px; overflow:hidden}
+.vrc.vrc-calendar .day_number_header{ width:20px;; height:20px;}
+.vrc.vrc-calendar .button_calendar-header{  position: relative;
+    top: 9px;
+    z-index: 10000; margin:0 8px}
+.vrc.vrc-calendar .item table{ width:100%;}
+.vrc.vrc-calendar td{ vertical-align:top; white-space: nowrap; }
+.vrc.vrc-calendar .customNavigation .pull-right { position:relative;}
+
+.vrc.vrc-calendar .item td{display: inline-table;}
+@media (max-width: 767px){
+    /*.item td{ width:100%; display:block}*/
+    .vrc.vrc-calendar .calendar-row td{ padding:0;}
+    .vrc.vrc-calendar .calendar-month-container { }
+
+}
+
+@media (max-width: 600px){
+    /*.item td{display: inline-table;font-size: 10px;width: 47%;}*/
+    .vrc.vrc-calendar .calendar-row td{ padding:0;}
+    .vrc.vrc-calendar .calendar-month-container { }
+
+}
+@media (max-width: 10000px){
+    .vrc.vrc-calendar .item td{display: inline-table;font-size: 12px;}
+    .vrc.vrc-calendar .calendar-row td{ padding:0;}
+}
+
+
+@media (min-width: 2100px){
+    .vrc.vrc-calendar .calendar-month-container {
+
+        margin: 0 3px 10px 4px;
+    }
+
+}
