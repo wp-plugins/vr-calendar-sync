@@ -10,7 +10,7 @@
  * Plugin Name:		  VR Calendar Free Repo
  * Plugin URI:        http://www.vrcalendarsync.com/
  * Description:       VR Calendar Free plugin
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Innate Images, LLC
  * Author URI:
  * Text Domain:       vr-calendar-locale
