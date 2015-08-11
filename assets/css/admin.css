@@ -1,0 +1,42 @@
+.tab-content {
+    display: none;
+    padding: 15px 0;
+}
+.tab-content.tab-content-active {
+    display: block;
+}
+#calendar-links-cloner {
+    display: none;
+}
+.calendar_link_row td {
+    position: relative;
+}
+.calendar_link_row .remove-calendar-link {
+    position: absolute;
+    top:21px;
+    right: 0px;
+}
+.vrc-remove-link {
+    background: url('../images/icon-close.png') top left no-repeat;
+    display: block;
+    width: 16px;
+    height: 16px;
+    text-indent: -9999px;
+}
+#price-exception-clone {
+    display: none;
+}
+.vc-full-iframe {
+    border: none;
+    width: 100%;
+}
+#adminmenu .toplevel_page_vr-calendar-dashboard div.wp-menu-image:before {
+    content: '\f145';
+}
+.vc-dash-banner {
+    background:#fff;
+    text-align: center;
+}
+.vc-dash-banner img {
+    max-width: 100%;
+}
