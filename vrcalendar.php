@@ -1,9 +1,9 @@
 <?php
 /**
  * @package   VR Calendar
- * @author    Author <author@example.com>
+ * @author    Innate Images, LLC <info@innateimagesllc.com>
  * @license   GPL-2.0+
- * @link      http://example.com
+ * @link      http://www.vrcalendarsync.com
  * @copyright 2015 VR Calandar
  *
  * @wordpress-plugin
