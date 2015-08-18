@@ -1,6 +1,6 @@
 === VR Calendar ===
 Contributors: Innate Images, LLC
-Tags: calendar, vacation rental, ical
+Tags: calendar, vacation rental, ical, availability, Booking, cabins, cottages, holiday rentals, listings, software, system, vacation homes, vacation rentals, Website, WordPress Plugin
 Requires at least: 3.0.1
 Tested up to: 4.2.2
 Stable tag: 1.0.1
