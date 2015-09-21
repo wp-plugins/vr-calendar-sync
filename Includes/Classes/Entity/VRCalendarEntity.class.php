@@ -41,6 +41,7 @@ class VRCalendarEntity extends VRCSingleton {
 
     function saveCalendar($data) {
         global $wpdb;
+        $data['calendar_name'] = htmlentities($data['calendar_name'],ENT_QUOTES);
         $data['calendar_links'] = json_encode($data['calendar_links']);
         $data['calendar_layout_options'] = json_encode($data['calendar_layout_options']);
         $calendar_id = $data['calendar_id'];
@@ -78,6 +79,7 @@ class VRCalendarEntity extends VRCSingleton {
         $sql = "select * from {$this->table_name} where calendar_id='{$calendar_id}'";
         $data = $wpdb->get_row($sql);
         if(isset($data->calendar_id)) {
+            $data->calendar_name = html_entity_decode($data->calendar_name,ENT_QUOTES);
             $data->calendar_layout_options = json_decode($data->calendar_layout_options, true);
             $data->calendar_links = json_decode($data->calendar_links);
         }
