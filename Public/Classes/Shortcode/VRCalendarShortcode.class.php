@@ -19,7 +19,8 @@ class VRCalendarShortcode extends VRCShortcode {
         $calendar_html = $this->getCalendar($cal_data, 36);
         $calendar_css =$this->getCalendarCSS($cal_data);
         $uid = uniqid();
-        $last_sync_date = date('F d, Y \a\t h:i a', strtotime($cal_data->calendar_last_synchronized));
+
+        $last_sync_date = get_date_from_gmt($cal_data->calendar_last_synchronized, 'F d, Y \a\t h:i a');
         $output = <<<E
 <div class="vrc vrc-calendar vrc-calendar-{$cal_data->calendar_layout_options['size']} vrc-calendar-id-{$cal_data->calendar_id}" id="vrc-calendar-uid-{$uid}">
     <div class=" calendar-header">
@@ -36,8 +37,7 @@ class VRCalendarShortcode extends VRCShortcode {
             <div class="pull-right">
                 <div class="button_calaner_header">
                     <div class="customNavigation">
-                        <a class="btn-prev pull-left">Previous</a>
-                        <a class="btn-next pull-right">Next</a>
+                        <a class="btn-prev pull-left">Previous</a> <a class="btn-next pull-right">Next</a>
                     </div>
                 </div>
             </div>

@@ -145,20 +145,20 @@
 .vrc.vrc-calendar .item td{display: inline-table;}
 @media (max-width: 767px){
     /*.item td{ width:100%; display:block}*/
-    .vrc.vrc-calendar .calendar-row td{ padding:0;}
+    .vrc.vrc-calendar .calendar-row td{ padding:0 !important;}
     .vrc.vrc-calendar .calendar-month-container { }
 
 }
 
 @media (max-width: 600px){
     /*.item td{display: inline-table;font-size: 10px;width: 47%;}*/
-    .vrc.vrc-calendar .calendar-row td{ padding:0;}
+    .vrc.vrc-calendar .calendar-row td{ padding:0 !important;}
     .vrc.vrc-calendar .calendar-month-container { }
 
 }
 @media (max-width: 10000px){
     .vrc.vrc-calendar .item td{display: inline-table;font-size: 12px;}
-    .vrc.vrc-calendar .calendar-row td{ padding:0;}
+    .vrc.vrc-calendar .calendar-row td{ padding:0 !important;}
 }
 
 

@@ -4,6 +4,7 @@ if ( ! defined( 'WPINC' ) ) {
     die();
 }
 /* Load required files */
+
 require_once( VRCALENDAR_PLUGIN_DIR . '/Includes/Classes/Abstract/Singleton/VRCSingleton.class.php' );
 require_once( VRCALENDAR_PLUGIN_DIR . '/Includes/Classes/Abstract/Shortcode/VRCShortcode.class.php' );
 require_once( VRCALENDAR_PLUGIN_DIR . '/Includes/Classes/Settings/VRCalendarSettings.class.php' );
